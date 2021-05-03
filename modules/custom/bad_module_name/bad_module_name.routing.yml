@@ -1,0 +1,22 @@
+bad_module_name.bad_config_settings:
+  path: '/admin/config/bad_module_name/api-header-form'
+  defaults:
+    _form: '\Drupal\bad_module_name\Form\BadConfigForm'
+  requirements:
+    _permission: 'administer site configuration'
+bad_module_name.bad_config_parent:
+  path: '/admin/config/bad_module_name'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Bad Module Configs'
+  requirements:
+    _permission: 'access administration pages'
+bad_module_name.api_call:
+  path: '/api/accessibility'
+  defaults:
+    _controller: '\Drupal\bad_module_name\Controller\BadController::runThatAccessibilityApi'
+    _title: 'Accessibility API Call'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+    _format: json

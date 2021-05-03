@@ -1,0 +1,12 @@
+bad_module_name.bad_config_parent:
+  route_name: bad_module_name.bad_config_parent
+  parent: system.admin_config
+  title: Bad Module Name
+  description: 'Configure and use bad tools.'
+  weight: 100
+bad_module_name.bad_config_child:
+  title: Bad Config Form
+  parent: bad_module_name.bad_config_parent
+  description: 'Configure API Auth Header'
+  route_name: bad_module_name.bad_config_settings
+  weight: 110

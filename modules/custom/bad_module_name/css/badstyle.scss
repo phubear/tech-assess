@@ -1,0 +1,6 @@
+/* Excellently bad coloring. Forget logic */
+@for $i from 1 through 255 {
+  .color-me-#{$i} {
+    color: rgb(random(256) - $i, (random(50) + $i) + random(50), random(255));
+  }
+}

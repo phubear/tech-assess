@@ -1,0 +1,10 @@
+bad-js:
+  css:
+    theme:
+      css/badstyle.css: {}
+  js:
+    js/bad-js-functionality.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,4 @@
+name: Bad Module Name
+description: Does bad things
+core: 8.x
+type: module

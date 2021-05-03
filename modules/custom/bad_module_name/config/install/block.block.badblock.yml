@@ -1,0 +1,20 @@
+uuid: d26360d7-d109-4323-a5da-29129ba8d538
+langcode: en
+status: true
+dependencies:
+  module:
+    - bad_module_name
+  theme:
+    - bartik
+id: badblock
+theme: bartik
+region: sidebar_first
+weight: -4
+provider: null
+plugin: bad_block
+settings:
+  id: bad_block
+  label: 'Bad Block'
+  provider: bad_module_name
+  label_display: '0'
+visibility: {  }
